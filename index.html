@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator-container">
+    <div class="top-bar">
+      <h1>Calculator</h1>
+      <div class="toggles">
+        <label>
+          <input type="checkbox" id="modeToggle"> Scientific Mode
+        </label>
+        <label>
+          <input type="checkbox" id="themeToggle"> Dark Mode
+        </label>
+      </div>
+    </div>
+
+    <div class="display">
+      <input type="text" id="display" readonly>
+      <button id="historyBtn">History</button>
+    </div>
+
+    <div class="buttons simple-mode" id="buttonContainer">
+      <!-- Buttons will be populated by JS depending on mode -->
+    </div>
+
+    <div class="history-panel" id="historyPanel">
+      <div class="history-header">
+        <h3>History</h3>
+        <button id="clearHistory">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
